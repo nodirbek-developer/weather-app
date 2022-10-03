@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(./death-valley-3133502_960_720.webp);
+    background-size: cover;
+    display: flex;
+}
+.left_blok, .right_blok{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 35%;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid white;
+    background-color: rgb(255, 255, 255, 0.499);
+    color: rgba(0, 0, 0, 0.79);
+    padding-left: 10px;
+}
+.input:focus{
+    background-color:rgb(255, 255, 255, 0.699);
+    border:3px solid white;
+}
+.content{
+    width: 70%;
+    height: 70%;
+}
+.country{
+    font-size: 45px;
+    color:blue;
+}
+.date{
+    font-size: 25px;
+    color:rgba(0, 0, 255, 0.804);
+}
+.temp{
+    font-size: 70px;
+    color:rgba(0, 0, 255, 0.529);
+    margin: 30px 40px;
+}
+.condition{
+    font-size: 30px;
+    color:rgba(0, 0, 255, 0.841);
+}
+.tempCases{
+    font-size: 30px;
+    color:rgba(0, 0, 255, 0.841);   
+}
+.modal_block{
+    position: absolute;
+    right: 15px;
+}
+.modal{
+    width: 250px;
+    height: 60px;
+    border:2px solid black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(255, 255, 255, 0.505);
+    backdrop-filter: blur(2px);
+}
+.fade{
+    transform: translateY(-900%);
+    transition: all 0.5s ease-in;
+}
+.none{
+    display: none;
+}
